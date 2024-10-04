@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Primary-Colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --white: hsl(0, 100%, 100%);
+    /* Neutral-Colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero-img {
+    width: 350px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+
+body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 100px auto;
+}
+
+.card {
+    max-width: 350px;
+    min-height: 60vh;
+    background-color: var(--white);
+    border-radius: 0 0 10px 10px;
+}
+
+.header{
+    padding: 25px;
+    text-align: center;
+}
+p {
+    color: var(--desaturated-blue);
+    font-size: 15px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 15vh;
+    background-color: var(--very-pale-blue);
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 30px;
+}
+
+.btn {
+    margin: 25px;
+    text-align: center;
+    background: var(--bright-blue);
+    width: 300px;
+    height: 50px;
+    color: var(--white);
+    border-radius: 12px;
+    border: 5px solid transparent;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p {
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;  
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--bright-blue);
+    transition: color 5s ease-in-out;
+    animation: color 5s linear infinite;
+}
+@keyframes color {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes color {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
